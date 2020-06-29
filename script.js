@@ -177,7 +177,7 @@ var vm = new Vue({
             this.myBall.radius = 15;
             this.showScore = false
             clearInterval(this.interval)
-            this.countdown = 600
+            this.countdown = 100
             this.setCountdown()
         },
         endGame(){
