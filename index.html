@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Agar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div ref="agario" id="agario">
+    <canvas id="canvas" ref="canvas"></canvas>
+    <div id="pause" v-if="pause">PAUSE</div>
+    <div id="score" v-if="showScore">
+        <div>YOUR SCORE</div>
+        <div>{{score}}</div>
+    <button id="restart" @click="startGame()">RESTART</button>
+    </div>
+    <div id="countdown">{{countdown}}</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
